@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/output.css">
+  <script defer src="./scripts/share-icon-mobile-tooltip.js"></script>
+  
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+<body class="font-Manrope bg-primary-light-grayish-blue flex justify-center items-center h-dvh">
+  <div class="rounded-2xl bg-white w-96 transition duration-300 ease-in-out hover:scale-105 md:flex md:justify-between md:w-[50rem] md:h-[20rem]">
+    <figure>
+      <img src="./images/drawers.jpg" alt="" class="rounded-t-2xl md:rounded-l-2xl md:rounded-r-[0] h-56 w-full md:w-[20rem] md:h-[20rem] object-cover">
+    </figure>
+
+    <div>
+        <div class="p-10 pb-0 md:p-0 md:w-[28rem]">
+        <h1 class="text-primary-very-dark-grayish-blue font-bold text-xl mb-4 md:mt-5 md:text-2xl ">
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h1>
+
+        <p class="text-primary-desaturated-dark-blue mb-5 md:mb-8">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </p>
+      </div>
+
+      <div class="js-share-icon-tooltip">
+
+        <div class="js-default-state flex justify-start p-10 pt-5 pb-5 md:p-0 md:justify-between md:pr-10">
+          <img src="./images/avatar-michelle.jpg" alt="" class="h-12 w-12 rounded-full mr-4">
+          <div class="flex justify-between w-full">
+            <div class="mr-10">
+              <div class="text-primary-very-dark-grayish-blue font-bold text-base">Michelle Appleton</div>
+              <div class="text-primary-desaturated-dark-blue text-sm">28 Jun 2020</div>
+            </div>
+            <button class="bg-primary-light-grayish-blue h-10 w-10 rounded-full flex justify-center items-center js-button"><ion-icon name="arrow-redo" class="text-primary-very-dark-grayish-blue text-xl"></ion-icon></button>
+          </div>
+        </div>
+
+        <div class="js-share-state bg-primary-very-dark-grayish-blue p-10 pt-5 pb-5 hidden md:pb-0">
+          <figcaption class="flex justify-around items-center w-full bg-primary-very-dark-grayish-blue">
+            <div class="text-white font-extralight">S H A R E</div>
+            <ion-icon name="logo-facebook" class="text-white text-2xl"></ion-icon>
+            <ion-icon name="logo-twitter" class="text-white text-2xl"></ion-icon>
+            <ion-icon name="logo-pinterest" class="text-white text-2xl"></ion-icon>
+            <button class="bg-primary-desaturated-dark-blue h-10 w-10 rounded-full flex justify-center items-center js-button ml-10"><ion-icon name="arrow-redo" class="text-white text-xl"></ion-icon></button>
+          </figcaption>
+        </div>
+
+        <div class="relative inline-block cursor-pointer"> 
+          <span class="hidden w-72 bg-primary-very-dark-grayish-blue text-center p-3 pr-10 pl-10 rounded-xl absolute z-10 justify-between items-center left-60 bottom-20 js-hover-state hover-state">
+            <div class="text-white font-extralight">S H A R E</div>
+            <ion-icon name="logo-facebook" class="text-white text-2xl"></ion-icon>
+            <ion-icon name="logo-twitter" class="text-white text-2xl"></ion-icon>
+            <ion-icon name="logo-pinterest" class="text-white text-2xl"></ion-icon>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+    
+  
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
